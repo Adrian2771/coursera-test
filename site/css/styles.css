@@ -1,0 +1,61 @@
+/* styles for the Assignment Links Page */
+
+body{
+	display:flex;
+	flex-flow: row wrap;
+	height:100vh;
+	padding:0;
+	margin:0;
+}
+
+.header, .column-td, .footer{
+	margin:.3rem;
+	padding:.5rem;
+}
+
+.header{
+	background: lightblue;
+	flex: 0 1 100vw;
+}
+
+.header ul > li{
+	list-style-type: circle;
+	display:inline-block;
+	border:2px ridge gray;
+	text-align:center;
+	padding:.3rem;
+}
+
+.header ul > li > a{
+	text-decoration:none;
+	color:whitesmoke;
+}
+
+.column-td{
+	flex:1;
+	border:3px ridge slategray;
+	min-width: 240px;
+	overflow:auto;
+	padding:.5rem;
+}
+
+.column-td:nth-child(2){
+	background:bisque;
+}
+
+.column-td:nth-child(3){
+	background:aliceblue;
+}
+
+.column-td:nth-child(4){
+	background:lavender;
+}
+
+.footer{
+	background:cadetblue;
+	flex: 0 1 100vw;
+}
+
+h1, h2, h3{
+	text-align: center;
+}
