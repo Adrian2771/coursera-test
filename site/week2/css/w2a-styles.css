@@ -1,5 +1,114 @@
 /* Week2 assignment's styles */
 
+/************* base styles **********/
+
+*{
+	box-sizing: border-box;
+}
+
 body{
-	background: antiquewhite;
+	background: floralwhite;
+	font-family: 'Ubuntu', sans-serif;
+	padding:0;
+	margin:0;
+}
+
+h1{
+	text-align:center;
+	font-size:175%;
+}
+
+.row{
+	width:100%;
+	/* clear:both; */
+}
+
+.section{
+	position:relative;
+	background:lightgray;
+	border:1px solid black;
+	padding:.5rem;
+	margin:2% 1%;
+	height: 300px;
+	overflow: auto;
+}
+
+.section:hover{
+	background:lavender;
+}
+
+.section li{
+	margin:.3rem;
+	padding:.3rem;
+}
+
+.section li:hover{
+	background: aliceblue;
+}
+.title-region{
+	position:absolute;
+	margin-top:0;
+	margin-right:0;
+	top:0px;
+	right:0px;
+	border:1px solid black;
+	padding:.2rem 3rem;
+	font-size:125%;
+}
+
+#chicken h3{
+	background:indianred;
+	color: black;
+}
+
+#beef h3{
+	background:crimson;
+	color:ghostwhite;
+}
+
+#sushi h3{
+	background:bisque;
+	color:navy;
+}
+
+.inside-pg{
+	padding:1rem;
+	/*border:1px dashed red;*/
+
+}
+
+.after{
+	text-align:center;
+}
+
+/************* large viewport device styles **********/
+
+@media (min-width:992px){
+
+	.col-lg-3{
+		width:31.3333%;
+		float:left;
+	}
+}
+
+/************* medium viewport device styles **********/
+
+@media (min-width:768px) and (max-width:991px) {
+	.col-md-1, .col-md-2{
+		float:left;
+	}
+	
+	.col-md-1{
+		width:98%;
+	}
+
+	.col-md-2{
+		width:48%;	
+	}
+}
+
+/************* small viewport device styles **********/
+
+@media (max-width:767px) {
+	/* not necessary */
 }

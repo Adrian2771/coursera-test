@@ -1,12 +1,71 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Week 2 assignment</title>
 		<link rel="stylesheet" href="css/w2a-styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" >
+
 	</head>
 	<body>
-		<h1>Welcome to the Week 2 assignment!</h1>
-		<p>Lorem ipsum and more dummy text.</p>
-		<p><a href="../index.html">Back to the Links Page</a></p>
+		<h1>Mokcup implementation for Week 2 assignment (a.k.a. &quot;Our menu&quot;)</h1>
+
+		<div class="row">
+			<section id="chicken" class="section col-lg-3 col-md-2">
+				<p class="inside-pg">Instead of placing a dummy text, I decided to put in here some remarks in order to ease the assessment process. Some might say it is simply verbosity, others may find it useful. In both cases, I'll take the risk and blame.</p>
+
+				<ol>
+					<li>The basic fluid grid from lecture 24 might prove worthwhile, both as a starting point for the 2nd assignment and as an exercise. But the truth is you don't really need it entirely. You don't need to define twelve class selectors for containers made up from 1  to 12 base columns, since the assignment requires, practically, adjusting your columns to a width corresponding to the basic ratio (100/12) multiplied by just 1, 4 and 6.</li>
+
+					<li>The mockup is very simple, hence one class selector defined for a width of approximately 1/3 of the total width should be enough for devices with the viewport of 992 px or larger. When it comes to tablets, i.e. devices with a viewport between 768 and 991 px, one class selector defined for a width of approximately 50% of the total width and one selector defined for a width lesser than 100% should also be enough. Moreover, you might not want to define a redundant media query for aligning equally large sections (with almost 100% of the parent's width) one on top of another, since this is the default behavior for the block level elements.</li>
+
+					<li>The spacing between elements can't be ignored. When you define a margin, you should be aware that margins will be added to the amount of space "consumed" by an element within the parent container. <strong>The border-box case DOES NOT cover the margins.</strong> So, when you try to split the parent container in three floated columns of   equal width, each one with a margin of 1 percent in every direction, you'll actually have to set the column width to <samp>(100% - 6*1%) / 3 </samp>, which is 31.3333%. NOT 33.3333%!</li>
+
+					<li>One might have noticed that an element with its position property set to "absolute" cannot push with its margins the neighboring elements from the normal flow, located in the parent container (the container with its position property set to a value other than static, and to which the absolute positioned element is referring). Consequently, different values of margins and padding for the text content should be tried, in order to avoid overlapping with the section title content.</li>
+
+				</ol>
+
+				<h3 class="title-region">Chicken</h3>
+			</section>
+
+			<section id="beef" class="section col-lg-3 col-md-2">
+
+				<p class="inside-pg">Instead of placing a dummy text, I decided to put in here some remarks in order to ease the assessment process. Some might say it is simply verbosity, others may find it useful. In both cases, I'll take the risk and blame.</p>
+
+				<ol>
+					<li>The basic fluid grid from lecture 24 might prove worthwhile, both as a starting point for the 2nd assignment and as an exercise. But the truth is you don't really need it entirely. You don't need to define twelve class selectors for containers made up from 1  to 12 base columns, since the assignment requires, practically, adjusting your columns to a width corresponding to the basic ratio (100/12) multiplied by just 1, 4 and 6.</li>
+
+					<li>The mockup is very simple, hence one class selector defined for a width of approximately 1/3 of the total width should be enough for devices with the viewport of 992 px or larger. When it comes to tablets, i.e. devices with a viewport between 768 and 991 px, one class selector defined for a width of approximately 50% of the total width and one selector defined for a width lesser than 100% should also be enough. Moreover, you might not want to define a redundant media query for aligning equally large sections (with almost 100% of the parent's width) one on top of another, since this is the default behavior for the block level elements.</li>
+
+					<li>The spacing between elements can't be ignored. When you define a margin, you should be aware that margins will be added to the amount of space "consumed" by an element within the parent container. <strong>The border-box case DOES NOT cover the margins.</strong> So, when you try to split the parent container in three floated columns of   equal width, each one with a margin of 1 percent in every direction, you'll actually have to set the column width to <samp>(100% - 6*1%) / 3 </samp>, which is 31.3333%. NOT 33.3333%!</li>
+
+					<li>One might have noticed that an element with its position property set to "absolute" cannot push with its margins the neighboring elements from the normal flow, located in the parent container (the container with its position property set to a value other than static, and to which the absolute positioned element is referring). Consequently, different values of margins and padding for the text content should be tried, in order to avoid overlapping with the section title content.</li>
+
+				</ol>
+
+				<h3 class="title-region">Beef</h3>
+			</section>
+
+			<section id="sushi" class="section col-lg-3 col-md-1">
+
+				<p class="inside-pg">Instead of placing a dummy text, I decided to put in here some remarks in order to ease the assessment process. Some might say it is simply verbosity, others may find it useful. In both cases, I'll take the risk and blame.</p>
+
+				<ol>
+					<li>The basic fluid grid from lecture 24 might prove worthwhile, both as a starting point for the 2nd assignment and as an exercise. But the truth is you don't really need it entirely. You don't need to define twelve class selectors for containers made up from 1  to 12 base columns, since the assignment requires, practically, adjusting your columns to a width corresponding to the basic ratio (100/12) multiplied by just 1, 4 and 6.</li>
+
+					<li>The mockup is very simple, hence one class selector defined for a width of approximately 1/3 of the total width should be enough for devices with the viewport of 992 px or larger. When it comes to tablets, i.e. devices with a viewport between 768 and 991 px, one class selector defined for a width of approximately 50% of the total width and one selector defined for a width lesser than 100% should also be enough. Moreover, you might not want to define a redundant media query for aligning equally large sections (with almost 100% of the parent's width) one on top of another, since this is the default behavior for the block level elements.</li>
+
+					<li>The spacing between elements can't be ignored. When you define a margin, you should be aware that margins will be added to the amount of space "consumed" by an element within the parent container. <strong>The border-box case DOES NOT cover the margins.</strong> So, when you try to split the parent container in three floated columns of   equal width, each one with a margin of 1 percent in every direction, you'll actually have to set the column width to <samp>(100% - 6*1%) / 3 </samp>, which is 31.3333%. NOT 33.3333%!</li>
+
+					<li>One might have noticed that an element with its position property set to "absolute" cannot push with its margins the neighboring elements from the normal flow, located in the parent container (the container with its position property set to a value other than static, and to which the absolute positioned element is referring). Consequently, different values of margins and padding for the text content should be tried, in order to avoid overlapping with the section title content.</li>
+
+				</ol>
+
+				<h3 class="title-region">Sushi</h3>
+			</section>
+		</div>
+		<p class="after"><a href="../index.html">Back to the Links Page</a></p>
 	</body>
 </html>
