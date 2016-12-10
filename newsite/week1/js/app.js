@@ -1,4 +1,3 @@
-/* */
 (function(){
 	'use strict';
 
@@ -37,15 +36,19 @@
 
 		function countItems(str){
 		var x = str.split(","); 
+		
 		// When invoked from an empty string, the method "split" will return an array with the void string as its unique member. 
 		// The length of the returned array is never zero!
 		// Try console.log(x) on an empty string.
+		
 		var y = 0;
 		for(var i = 0; i < x.length; i++){
 			if(x[i] == "" || x[i].trim() == "") y++;
 		}
-		console.log(y);
+		//console.log(y);
 		return (x.length - y);
 		};
 	};
 })();
+
+
