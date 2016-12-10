@@ -18,37 +18,33 @@
 			
 			var x = countItems($scope.items);
 			$scope.colorPicker.color = "green";
-			if(x == 0) 
-				{
-					$scope.msg = "Please enter data first!";
-					$scope.colorPicker.color = "red";
-				}
-			else if(x > 0 && x <= 3) 
-				{
-					$scope.msg = "Enjoy!";
-				}
-			else 
-				{
-					$scope.msg = "Too much!";
-				}
+			if(x == 0) {
+				$scope.msg = "Please enter data first!";
+				$scope.colorPicker.color = "red";
+			}
+			else if(x > 0 && x <= 3){
+				$scope.msg = "Enjoy!";
+			}
+			else {
+				$scope.msg = "Too much!";
+			}
 		};
 
 
 		function countItems(str){
 		var x = str.split(","); 
-		
-		// When invoked from an empty string, the method "split" will return an array with the void string as its unique member. 
+
+		// When invoked from an empty string, the method split will return an array with the void string as its unique member. 
 		// The length of the returned array is never zero!
 		// Try console.log(x) on an empty string.
 		
 		var y = 0;
+		
 		for(var i = 0; i < x.length; i++){
 			if(x[i] == "" || x[i].trim() == "") y++;
 		}
-		//console.log(y);
+
 		return (x.length - y);
 		};
 	};
 })();
-
-
