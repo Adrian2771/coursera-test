@@ -12,82 +12,72 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>Week3 Assignment</title>
+    <title>Week 3 Proposed solution</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
   </head>
-<body>
-	<header>
-		<nav id="no-round-border" class="navbar navbar-default">
-		
-			<div class="container-fluid">
-				<div class="navbar-header">
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
 
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-						<span class="sr-only">Toggle menu</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-menu" aria-expanded="false">
+							<span class="sr-only">Toggle navigation menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 
-					<a class="navbar-brand" href="index.html">The Brand name</a>
+						<a class="navbar-brand" href="#">Food, LLC</a>
+					</div>
 
+					<div class="collapse navbar-collapse" id="collapsable-menu">
+
+						<ul id="button-list" class="nav navbar-nav navbar-right text-center">
+
+							<li class="hidden-sm hidden-md hidden-lg"><a href="#chicken">Chicken</a></li>
+							<li class="hidden-sm hidden-md hidden-lg"><a href="#beef">Beef</a></li>
+							<li class="hidden-sm hidden-md hidden-lg"><a href="#sushi">Sushi</a></li>
+
+						</ul>
+					</div>    
 				</div>
+			</nav>
 
-				<div id="collapsable-nav" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">First page</a></li>
-						<li><a href="#">Second page</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		
-	</header>
-	
-	<main>
-		<div class="container">
-		<h2 class="text-center">Our menu</h2>
+		</header>
+		 <div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<article class="first">
-						<h3 class="text-center">Chicken</h3>
-						<p>Maecenas placerat metus quis tincidunt fringilla. Nunc gravida est non sapien sagittis rhoncus. Sed eu aliquam lorem, at finibus diam. Pellentesque venenatis risus non ligula vestibulum sollicitudin. Sed eu scelerisque augue, non fermentum enim. Aliquam lacinia eu nisl in vehicula. Phasellus diam risus, gravida id euismod sit amet, tristique ut risus. Integer laoreet vestibulum tincidunt. Pellentesque eu varius orci, eu imperdiet odio. Donec dignissim volutpat convallis. Vivamus non sapien vitae mauris aliquam cursus. Sed quis molestie ante. Mauris volutpat eleifend odio in sollicitudin. Nunc pretium risus lacus, vel hendrerit lectus consequat sit amet.</p>
-						
-						<p>Vestibulum varius odio urna, tempor hendrerit lectus rhoncus at. Vestibulum hendrerit vehicula erat eget dictum. Etiam dolor eros, porta eget orci at, rutrum rhoncus tortor. Aliquam erat volutpat. Donec accumsan quis nulla rutrum placerat. Aenean pellentesque neque venenatis nibh pulvinar porta. </p>
-						
-						<a href="#no-round-border">Back to top</a>
-					</article>
+				<h1 class="text-center">Our Menu</h1>
+				<section id="unique-section" class="col-xs-12">
 					
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<article class="second">
-						<h3 class="text-center">Beef</h3>
-						<p>Maecenas placerat metus quis tincidunt fringilla. Nunc gravida est non sapien sagittis rhoncus. Sed eu aliquam lorem, at finibus diam. Pellentesque venenatis risus non ligula vestibulum sollicitudin. Sed eu scelerisque augue, non fermentum enim. Aliquam lacinia eu nisl in vehicula. Phasellus diam risus, gravida id euismod sit amet, tristique ut risus. Integer laoreet vestibulum tincidunt. Pellentesque eu varius orci, eu imperdiet odio. Donec dignissim volutpat convallis. Vivamus non sapien vitae mauris aliquam cursus. Sed quis molestie ante. Mauris volutpat eleifend odio in sollicitudin. Nunc pretium risus lacus, vel hendrerit lectus consequat sit amet.</p>
-						
-						<p>Vestibulum varius odio urna, tempor hendrerit lectus rhoncus at. Vestibulum hendrerit vehicula erat eget dictum. Etiam dolor eros, porta eget orci at, rutrum rhoncus tortor. Aliquam erat volutpat. Donec accumsan quis nulla rutrum placerat. Aenean pellentesque neque venenatis nibh pulvinar porta. </p>
-						
-						<a href="#no-round-border">Back to top</a>
-					</article>
-				</div>
-				<div class="col-md-4 col-sm-12 col-xs-12">
-					<article class="third">
-						<h3 class="text-center">Sushi</h3>
-						<p>Maecenas placerat metus quis tincidunt fringilla. Nunc gravida est non sapien sagittis rhoncus. Sed eu aliquam lorem, at finibus diam. Pellentesque venenatis risus non ligula vestibulum sollicitudin. Sed eu scelerisque augue, non fermentum enim. Aliquam lacinia eu nisl in vehicula. Phasellus diam risus, gravida id euismod sit amet, tristique ut risus. Integer laoreet vestibulum tincidunt. Pellentesque eu varius orci, eu imperdiet odio. Donec dignissim volutpat convallis. Vivamus non sapien vitae mauris aliquam cursus. Sed quis molestie ante. Mauris volutpat eleifend odio in sollicitudin. Nunc pretium risus lacus, vel hendrerit lectus consequat sit amet.</p>
-						
-						<p>Vestibulum varius odio urna, tempor hendrerit lectus rhoncus at. Vestibulum hendrerit vehicula erat eget dictum. Etiam dolor eros, porta eget orci at, rutrum rhoncus tortor. Aliquam erat volutpat. Donec accumsan quis nulla rutrum placerat. Aenean pellentesque neque venenatis nibh pulvinar porta. </p>
-						
-						<a href="#no-round-border">Back to top</a>
-					</article>
-				</div>
-			</div>
-		</div>
-	</main>
+					<h2 id="chicken" class="text-center">Chicken</h2>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum tortor vitae quam blandit, elementum bibendum quam fermentum. Maecenas interdum lacus id finibus mollis. Proin sodales lectus at neque egestas, non facilisis risus porttitor. Sed pulvinar lorem at felis aliquam accumsan. In eleifend leo metus, ut efficitur quam iaculis id. Donec sed vestibulum nulla, eu condimentum purus. Curabitur ac blandit ex, eu auctor metus. Nunc fermentum quam nec dui laoreet, sed lacinia est lacinia. Sed viverra et nisi in facilisis. Praesent volutpat sapien magna, quis tristique mi ullamcorper et. Integer ultricies neque et lorem molestie iaculis. Ut et nunc vitae sem tempor semper non vitae quam. Duis nec varius purus. Sed ultrices tincidunt felis ut sollicitudin. Duis eleifend eros non rhoncus mattis.</p>
+					
+					<p>Aliquam lobortis commodo tristique. Aenean libero ipsum, vulputate ac scelerisque a, tincidunt sed est. Proin ultrices blandit cursus. Nunc ex lectus, cursus et bibendum at, venenatis eu nunc. Integer condimentum, justo a euismod condimentum, nisi turpis sodales dui, ut eleifend ante diam et risus. Pellentesque malesuada convallis nunc, non vestibulum justo suscipit sit amet. Pellentesque aliquet nunc urna, sit amet commodo odio rutrum ut. Aenean eget dictum tortor, sit amet pharetra lorem. Donec eu vestibulum ligula, at tincidunt lectus. Pellentesque ipsum justo, tempor nec nibh non, pellentesque scelerisque nisl. Pellentesque blandit nibh a laoreet lobortis. Curabitur et rhoncus nulla, a fringilla ipsum. Ut placerat fringilla bibendum. Integer et laoreet massa.</p>
+					
+					<h2 id="beef" class="text-center">Beef</h2>
+					
+					<p>Maecenas sed dui dignissim, rhoncus lectus tristique, viverra nisl. Proin et gravida lectus. Nunc id lectus velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin dignissim ante ut quam viverra tempor. Donec vulputate purus quis porta mattis. Cras vel faucibus nulla, sed porttitor magna. Duis in pellentesque diam. Proin nec enim placerat, porta elit eu, fermentum sapien. Quisque venenatis elit in massa imperdiet, et dictum dui fermentum. Donec id lobortis augue. Phasellus at laoreet justo. Duis euismod pretium ipsum. Pellentesque non commodo tortor. Integer semper fringilla lectus sit amet ultricies.</p>
+					
+					<p>Phasellus pellentesque purus in arcu tincidunt tempus. Cras non dolor placerat, tempor neque nec, consectetur lectus. Nullam feugiat fringilla accumsan. Curabitur dignissim fringilla orci quis tincidunt. Morbi varius ullamcorper arcu, et molestie nunc rutrum quis. Pellentesque id ullamcorper tellus. Cras nec libero id mauris congue pharetra a eu odio.</p>
+					
+					<h2 id="sushi" class="text-center">Sushi</h2>
+					
+					<p>Nullam quam eros, semper vel tincidunt lobortis, tempus ac nulla. Praesent congue, urna non vestibulum convallis, justo leo sagittis risus, at sollicitudin metus dui sit amet arcu. Ut molestie, enim ut scelerisque finibus, tellus dolor dignissim ligula, ac bibendum justo neque in turpis. Mauris congue malesuada nisl. In in tortor maximus, venenatis ipsum interdum, elementum mauris. Nam ut ornare magna, vel efficitur dolor. Vivamus in nunc eget lectus tristique mollis sed nec dolor. Praesent risus est, aliquet sit amet leo vitae, pellentesque aliquet risus. Etiam ac magna ut sapien euismod efficitur eget sit amet erat. Suspendisse in mollis risus. Cras tristique posuere faucibus. Sed faucibus convallis orci, quis fringilla mi viverra id. Suspendisse sed magna dui.</p>
+					
+					<p>Vestibulum consectetur augue vitae rutrum congue. Aliquam erat volutpat. Integer ullamcorper pulvinar tellus at feugiat. Cras tristique elit urna, quis rutrum lorem luctus eget. Nulla consequat, lectus sed iaculis malesuada, nisi eros cursus nunc, a porta erat ante ac est. Duis ultricies sem quam, sed sodales sapien facilisis ac. Pellentesque viverra gravida convallis. Pellentesque at luctus ante. Sed consectetur justo vel mauris viverra, id viverra risus tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc tempor, nisl vel volutpat congue, purus turpis feugiat urna, non semper sapien dolor vitae nisi. Integer sit amet tortor mollis, pellentesque tellus eu, dictum magna. Integer diam mauris, feugiat ut purus eget, placerat mattis eros. Aliquam erat volutpat. Duis et massa eget justo bibendum lobortis vel in lorem. Mauris elementum sapien sit amet dictum gravida. Suspendisse luctus venenatis urna vel consectetur. Nulla venenatis lorem sed purus dapibus, sed vulputate libero congue. Nam eget augue urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					
+					<p>Morbi massa nulla, sollicitudin eget viverra sed, vulputate et augue. In accumsan arcu justo, vitae viverra odio tincidunt ut. In vehicula augue diam, sit amet mattis sem egestas id. Nam volutpat finibus nisi in cursus. Nunc scelerisque odio quis odio consequat sollicitudin a eu est. Proin luctus justo lorem, eu hendrerit est suscipit eget. Sed vitae nunc vitae orci interdum facilisis sed et ligula. Morbi ut dolor ut velit ullamcorper sodales blandit vitae purus. In consequat porta iaculis.Vivamus sollicitudin porttitor justo, nec varius elit aliquam sed. Quisque ut mi ut eros rutrum malesuada at id mauris. Morbi molestie eleifend porttitor. Praesent tincidunt nibh sed turpis maximus, ut aliquam mauris feugiat. Proin cursus leo pretium, maximus dui id, rutrum elit. Aenean tempor diam sit amet felis luctus euismod. Fusce pretium neque id ex pulvinar, at elementum eros mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin laoreet nec erat ac commodo. Integer congue pharetra feugiat. Phasellus dictum elementum enim, porttitor ultricies nibh scelerisque at. Sed sit amet interdum leo.</p>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+				  </section>
+			</div>
+		</div>	  
+	</body>
 </html>
