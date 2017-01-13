@@ -59,7 +59,7 @@ function myFunction(s){
 		}
 		j++;
 	}
-	return "Substring: <b>" + s + "</b>. The longest substring in alphabetical order is: <b>" + temp + "</b>";
+	return "String: <b>" + s + "</b>. The longest substring in alphabetical order is: <b>" + temp + "</b>";
 }
 
 function myFunction1(s){
