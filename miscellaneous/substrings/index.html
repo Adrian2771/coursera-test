@@ -9,10 +9,19 @@
 	<body>
 	<section class="wrapper">
 		<h1>Dealing with substrings</h1>
-		<div class="container">
-			<p id="instructions">Drop a string of characters in the field below. The longest substring with letters in alphabetical order will be displayed.</p>
-			<input type = "text" name = "string" placeholder="max 50 characters" maxlength="50" size="50">
-			<div class="custom-button">Action!</div>
+			<div id="instructions">
+			
+				<p>Enter a string of characters in the field below. When click <strong>&quot;Action&quot;</strong>, the longest sequence in alphabetical order will be displayed. If there's more than one such substring (sequence), only the first will be displayed.</p>
+				<p>Click on <strong>&quot;Predefined&quot;</strong> and a collection of predefined strings will be passed in to the app. The longest substring in alphabetical order will be displayed for each string of the collection.</p>
+				<p>Click on <strong>&quot;Substrings&quot;</strong> to display all the substrings of the provided string.</p>
+				
+			</div>
+			<input id="input" type="text" name="string" placeholder="max 50 characters" maxlength="50" size="50">
+			<div id="button-container">
+				<div id="action" class="custom-button">Action!</div>
+				<div id="predefined" class="custom-button">Predefined</div>
+				<div id="substrings" class="custom-button">Substrings</div>
+			</div>
 			<p id="result">Here goes the result!</p>
 		</div>
 	</section>

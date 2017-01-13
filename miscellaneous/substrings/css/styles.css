@@ -5,50 +5,86 @@
 body{
 	padding:0;
 	margin:0;
-	background-color:darkslateblue;
-	font-family: 'Arial', sans-serif;
+	background:darkslateblue;
+	/**/
+	
+	font-family:'Arial', sans-serif;
 }
-h1, .custom-button, input{
+
+h1, .custom-button, #input{
 	text-align:center;
 }
 
-#result, #instructions, input{
-	width:60%;
+#result, #instructions, #button-container, #input{
+	width:80%;
 	margin:.5rem auto;
 	border:1px solid gray;
 	padding:1rem;
 }
 
 #instructions{
-	background:azure;
+	background:honeydew;
 }
 
 #result{
 	background:whitesmoke;
 }
 
-input{
+#input{
 	display:block;
 }
 
 .wrapper{
 	padding:.8rem;
 	width:90%;
-	height: 100vh;
-	margin:0 auto;
+	margin:1rem auto;
 	background:lavender;
+	background:-webkit-linear-gradient(lavender, azure);
+	background:-moz-linear-gradient(lavender, azure);
+	background:linear-gradient(lavender, azure);
 }
 
 .custom-button{
-	background: cadetblue;
-	width:5rem;
-	margin:.5rem auto;
+	color:white;
+	display:inline-block;
 	padding:.3rem;
 	border:2px ridge lightgray;
 	border-radius:4px;
 	cursor:pointer;
 }
 
-.custom-button:hover{
-	background:green;
+#action{
+	background: cadetblue;
+}
+
+#action:hover{
+	background: green;
+}
+
+#predefined{
+	background: indianred;
+}
+
+#predefined:hover{
+	background: crimson;
+}
+
+#substrings{
+	background: darkblue;
+}
+
+#substrings:hover{
+	background: deepskyblue;
+}
+
+@media (min-width:768px) and (max-width:1023px){
+	body{
+		font-size:.9rem;
+	}
+}
+
+@media (max-width:767px){
+	body{
+		font-size:.85rem;
+	}
 }
