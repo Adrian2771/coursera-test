@@ -1,0 +1,54 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding:0;
+	margin:0;
+	background-color:darkslateblue;
+	font-family: 'Arial', sans-serif;
+}
+h1, .custom-button, input{
+	text-align:center;
+}
+
+#result, #instructions, input{
+	width:60%;
+	margin:.5rem auto;
+	border:1px solid gray;
+	padding:1rem;
+}
+
+#instructions{
+	background:azure;
+}
+
+#result{
+	background:whitesmoke;
+}
+
+input{
+	display:block;
+}
+
+.wrapper{
+	padding:.8rem;
+	width:90%;
+	height: 100vh;
+	margin:0 auto;
+	background:lavender;
+}
+
+.custom-button{
+	background: cadetblue;
+	width:5rem;
+	margin:.5rem auto;
+	padding:.3rem;
+	border:2px ridge lightgray;
+	border-radius:4px;
+	cursor:pointer;
+}
+
+.custom-button:hover{
+	background:green;
+}
