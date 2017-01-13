@@ -4,20 +4,36 @@
 (function(){
 
 document.querySelector('#action').onclick = Action;
+document.querySelector('#predefined').onclick = Predefined;
+document.querySelector('#substrings').onclick = Substrings;
 
 function Action(){
 	var x = document.querySelector("input").value;
 	if(x.length === 0){
 		document.querySelector("#result").innerHTML = "A non-empty string should be provided!";
-
 	}
-	else myFunction(x);
+	else document.querySelector("#result").innerHTML = myFunction(x);
+}
+
+function Predefined(){
+	var arrOfStr = ['zakxfmxbangxyl','rbbyoiwouzkpgsrwflvatbl', 'qvrcdfxnoucltkt', 'jykbeweupppsgdegmcodwwlm', 'yornmuwooloygpkhuah', 'ledpzugfc', 'ndxihzqz', 'abcdefghijklmnopqrstuvwxyz', 'oarlcrmlstxocjckyvgltna', 'ggikmvabqpvhsb', 'nxnahdzzhgi', 'zyxwvutsrqponmlkjihgfedcba', 'ngwwpslsngufq', 'mivvqmznckwbnpwyjerazmmv', 'mnjucvnygceaunxvq', 'quswmyufhpoqofqyxqkozg', 'jcmdfilstlsm', 'mbuczpuedlic', 'jwjxlioronxhgqc', 'grbdryzhfw'];
+	var temp1 = '';
+	for(var s = 0; s < arrOfStr.length; s++){
+		temp1 += (myFunction(arrOfStr[s]) + "<br>");
+	}
+	console.log(arrOfStr.length);
+	document.querySelector("#result").innerHTML = temp1;
+}
+
+function Substrings(){
+	var x = document.querySelector("input").value;
+	if(x.length === 0){
+		document.querySelector("#result").innerHTML = "A non-empty string should be provided!";
+	}
+	else document.querySelector("#result").innerHTML = myFunction1(x);
 }
 
 function myFunction(s){
-	// var s1 = null;
-	// var i = null;
-	// var k = null;
 
 	var temp = s[0];
 
@@ -43,7 +59,24 @@ function myFunction(s){
 		}
 		j++;
 	}
-	document.querySelector("#result").innerHTML = "Longest substring in alphabetical order is: <b>" + temp + "</b>";
+	return "Substring: <b>" + s + "</b>. The longest substring in alphabetical order is: <b>" + temp + "</b>";
+}
+
+function myFunction1(s){
+
+	var temp = "These are the substrings of the string <b>" + s + "</b>:<br>"
+
+	var j = 0;
+	while(j <= s.length){
+		var i = j + 1;
+		while(i <= s.length){
+			//console.log(s.substring(j, i));
+			temp += (s.substring(j, i) + "<br>");
+			i++;
+		}
+		j++;
+	}
+	return temp;
 }
 
 })();
