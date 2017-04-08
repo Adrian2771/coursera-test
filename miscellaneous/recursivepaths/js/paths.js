@@ -142,6 +142,7 @@
 		
 		document.querySelectorAll("#first-form input")[0].value = "1";
 		document.querySelectorAll("#first-form input")[1].value = "1";
+		document.querySelectorAll("#first-form input")[5].value = "1";
 		document.querySelector("#display-result").innerHTML = "";
 		document.querySelector("#display-result2").innerHTML = "";
 		document.querySelector("#display-result3").innerHTML = "";
