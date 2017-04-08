@@ -1,0 +1,22 @@
+/* Path styles */
+* {
+	box-sizing:border-box;
+	font-family: Arial, sans-serif;
+}
+
+h2{
+	text-align:center;
+}
+
+input {
+	margin:.2em;
+}
+
+body{
+	background:lavender;
+}
+
+main{
+	width:90%;
+	margin:0 auto;
+}

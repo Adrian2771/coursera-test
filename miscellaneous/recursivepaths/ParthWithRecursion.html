@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="vieweport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<title>Paths with recursion</title>
+		<link rel="stylesheet" href="css/pathsStyles.css" />
+	</head>
+	<body>
+		<main>
+			<h2>This application calculates and displays the possible paths from the top-left corner to the bottom-right corner of a m * n matrix.</h2>
+			<p>
+				A path is deemed as &apos;possible&apos; if it can be covered by moving only vertically <i>(top down)</i> and horizontally <i>(left to right)</i>. Since for a 17 x 17 matrix, there are <strong>601080390</strong> possible paths, caution should be taken when using higher dimensions. Printing the possible paths for a matrix with more than 10  columns x 10 rows is not recommended, since the number of possible paths in this case is <strong>48620</strong> and the number of paths for the next upper case <i>(11 x 11)</i> is <strong>184756</strong>.
+			</p>
+			
+			<form id="first-form">
+				<fieldset>
+					<legend> Matrix dimensions</legend>
+					Nr. cols: <input type="number" name="ncols" value="1" min="1" step="1" /> <br>
+					Nr. rows: <input type="number" name="nrows" value="1" min="1" step="1" /> <br>
+				</fieldset>
+				<input type="button" id="matrix-dim" name="matrix-dim" value="Validate!" />
+				<input type="button" id="print-paths" name="print-paths" value="Print!" />
+				<input type="button" id="draw-path" name="draw-path" value="Draw!" />
+				Path nr: <input type="number" name="pathNr" value="1" min="1" step="1" /> <br>
+				<input type="button" id="reset-button" name="reset-button" value="Reset!" />
+				
+				<p id="display-result"></p>
+				<p id="display-result2"></p>
+				<p id="display-result3"></p>
+			</form>
+		</main>
+		<script src="js/paths.js"></script>
+	</body>
+</html>
